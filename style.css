@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background: gold;
+  color: black;
+  padding: 1em;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#spinnerWrapper {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid gold;
+  margin: 20px auto;
+  height: 80px;
+  background: #222;
+  position: relative;
+}
+
+.spinner-row {
+  display: flex;
+  transition: transform 2s ease-out;
+  height: 80px;
+}
+
+.spinner-item {
+  width: 100px;
+  height: 100%;
+  margin: 0 5px;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+.spinner-item.common { background: #bbb; }
+.spinner-item.uncommon { background: #66cc66; }
+.spinner-item.rare { background: #3399ff; }
+.spinner-item.legendary { background: gold; color: black; }
